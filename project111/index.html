@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image recog</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+</head>
+<body>
+   <center>
+    <h1>FACE RECOGNITION WEB APP</h1>
+
+<h4>Model is trained to indentify the following object</h4>
+<br>
+<hr>
+<button id="family"><h1>ME</h1></button>
+<br><br>
+<hr>
+<button id="family"><h1>SISTER</h1></button>
+<br><br>
+<hr>
+<button id="family"><h1>FATHER</h1></button>
+<br><br>
+<hr>
+<button id="family"><h1>MOTHER</h1></button>
+<br><br>
+<hr>
+<label id="label">Your Webcam View-</label>
+<div id="camera"></div>
+<br><br>
+<div id="result"></div>
+<button onclick="take_snapshot()" class="btn btn-info" id="capture">Capture Image</button>
+      <br><br>
+      <button onclick="check()" class="btn btn-success" id="idntify">Idntify Image</button>
+      <br><br>
+      
+      <p style="font-size: 22px;">Object :<span id="result_object_name"></span>  </p>
+      <p style="font-size: 22px;">Accuracy :<span id="result_object_accuracy"></span>  </p>
+    
+</center>
+
+
+</body>
+<script src="main.js"></script>
+</html>
